@@ -1,0 +1,317 @@
+:root{
+    --ff-font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-font-family);
+    line-height: 1.6em;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+h1,
+h2,
+h3{
+    margin-bottom:1.6rem;
+}
+h2{
+    margin:5rem 5rem;
+}
+h2,
+h3{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.5rem;
+    
+}
+
+p{
+    font-size: 1.3rem;
+    padding: 1.3;
+    text-align:start;
+    line-height: 2em;
+    
+}
+
+.link-faul{
+    text-decoration: none;
+    color:#999dc9 ;
+}
+
+.link-faul:hover{
+    opacity: 50%;
+}
+
+small{
+    opacity: 50%;
+}
+
+br{
+    height: 10em;
+}
+section{
+    margin: 0rem 10rem;
+}
+
+@media (max-width:40em){
+    h2{
+        margin: 1.6em 0em;
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.2;
+    }
+
+    br{
+        height: 2em;
+    }
+}
+
+.text-center{
+    text-align: center;
+    
+}
+
+nav{
+    position: fixed;
+    height: 4.2em;
+    width: 100%;
+    background:#fff ;
+    
+}
+
+.nav-links{
+    padding: 1.5em;
+    display: flex;
+    list-style: none;
+    
+    
+}
+
+.nav-links li a {
+    color: #BEC1E5;
+    text-decoration: none;
+    font-weight: 400;
+    padding:0em 1rem;
+
+}
+.nav-links li a:hover{
+    background-color: #BEC1E5;
+    border-radius: 1em;
+    color:white;
+}
+
+@media (max-width:40em){
+
+    nav li a{
+        height: 3rem;
+        background: #fff;
+        
+    }
+    .nav-links{
+        justify-content: center;
+    }
+
+
+}
+
+header,
+section{
+    padding: 6rem 4rem;
+    background-color: rgb(250,250,250,250);
+}
+
+header{
+
+padding:25rem 0rem;
+}
+ 
+.work,
+.art-gallery,
+.about,
+.order{
+    height: 100vh; 
+    
+}
+.work,
+.art-gallery,
+.about,
+.order,
+.funny{
+    height: 100vh; 
+    background-color: rgb(300,300,300,300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:70em){
+    .art-gallery,
+    .about,
+    .order,
+    .funny{
+        flex-direction: column;
+}
+
+}
+.funny,
+.about{
+    flex-direction: column;
+}
+
+.funny{
+    background-color: rgb(250,250,250,250);    
+}
+
+@media (max-width:40em){
+    .funny{
+        margin-top: 5em;
+        padding-bottom: calc(-10em);
+    }
+    .funny-image{
+        padding: 1em 2em;
+    }
+}
+
+
+
+@media (max-width: 40em) {
+
+    header{
+        padding: 20rem 0;
+        padding-bottom: 20rem;
+    }
+}
+
+@media (max-width:70em){
+    .order,
+    .funny,
+    section{
+        margin: 0;
+    }
+    .art-gallery,
+    .about{
+        margin-top: 11em;
+    }
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-basis: 100%;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;    
+}
+
+@media (max-width: 70em){
+    .container{
+        flex-direction:column;
+    }
+}
+
+img{
+    max-width: 100%;
+    width: 100rem;
+    
+}
+
+.image{
+    padding: 1.6em;
+}
+
+.quadro{
+    width: 50rem;
+    padding: 3em;
+}
+
+.faul-logo{
+    max-width: 30rem;
+    opacity: 80%;
+}
+
+.projeto{
+    max-width: 70rem;
+    padding: 2em;
+}
+
+.funny-image{
+    padding: 1.6rem;
+    max-width: 15rem;   
+}
+.insta-image{
+    padding: 0.1em;
+    max-width: 1.5rem ;
+    margin-left: 2em;
+}
+
+@media (max-width: 40em) {
+    img{
+        max-width: 100%;
+        margin:4em 0;
+        padding: 0;
+    }
+    .funny-image{
+        max-width: 15rem;
+        max-width: 100%;
+        margin:0;
+    }
+    .projeto{
+        padding: 0;
+        
+    }
+    .quadro{
+        padding: 0;
+    }
+
+}
+
+footer{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+    text-align: center;
+    
+}
+.foot{
+    display: flex;
+
+}
+
+.foot a:hover{
+    background-color: #BEC1E5;
+    color:#fff;
+    flex-direction: column;
+}
+
+    .foot a{
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        color: #BEC1E5;
+        padding: 0rem 1.3rem;
+        
+        background-color: white;border-radius: 1.3em;  
+    }
+    @media (max-width:40em){
+        footer{
+            height: 3rem;
+            text-align: center;
+        }
+        .foot{
+            align-items: center;
+        }
+        
+    }
